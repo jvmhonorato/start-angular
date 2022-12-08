@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./title.component.scss']
 })
 export class TitleComponent {
-
-  public title: string = 'Title test';
-  constructor() {}
-  ngOnInit():void {
-    
-  }
+   public title: string = 'Title';
 }

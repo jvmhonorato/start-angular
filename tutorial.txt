@@ -17,3 +17,8 @@ o metodo public pode ser usado em qualquer lugar
 public title: string = 'Title test'; depois importar pra o html do componente {{title}}
 
 . pra renderizar no app.component.html da app passar o <app-title></app-title>
+
+. passar o router outlet do html pra o ts: 
+template: '<router-outlet></router-outlet>'
+
+.em seguida apagar arquivos app.component.html, app.component.spec.test e app.sass pra deixar mais limpo por enquanto.
