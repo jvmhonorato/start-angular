@@ -1,0 +1,19 @@
+. instalar angular: ng new <app name> 
+
+.  construir server na app, iniciar a app: ng s ou ng serve
+
+. configurações padrão pra produção: ng build ou ng b
+
+. src/app/app.component.html eu passo <h1>{{ title }}</h1>.
+
+. e em src/app/app.component.ts eu chamo dentro de appComponent 
+public title = 'Bem vindo'
+
+o metodo public pode ser usado em qualquer lugar
+
+. comando pra criar component: ng g c <nome do componente>
+
+.no arquivo ts do componente passar dentro da classe :
+public title: string = 'Title test'; depois importar pra o html do componente {{title}}
+
+. pra renderizar no app.component.html da app passar o <app-title></app-title>
