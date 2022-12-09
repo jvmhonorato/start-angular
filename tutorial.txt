@@ -28,3 +28,13 @@ template: '<router-outlet></router-outlet>'
 CICLOS DE VIDA DO ANGULAR 
 
 .Em app.component.ts implementar o OnInit no component, depois por o constructor() em seguida o ngOnInit() 
+
+.usar o seletor de title no template em app.component.ts
+
+.Em title.component.ts implementar o OnInit e o onChanges na class com o tipo void
+
+ONCHANGES
+.uma vez a função onChanges passada, tudo que estiver dentro dela ira se manifestar toda vez que algo no input for alterado
+
+.Em title.component.ts importar e  add o @Input ao public, em seguida em app.component.ts no template <app-title title="Olá Mundo">   adicionar o texto na props title pra ser renderizada
+
