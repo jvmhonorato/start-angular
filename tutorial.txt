@@ -22,3 +22,9 @@ public title: string = 'Title test'; depois importar pra o html do componente {{
 template: '<router-outlet></router-outlet>'
 
 .em seguida apagar arquivos app.component.html, app.component.spec.test e app.sass pra deixar mais limpo por enquanto.
+
+
+
+CICLOS DE VIDA DO ANGULAR 
+
+.Em app.component.ts implementar o OnInit no component, depois por o constructor() em seguida o ngOnInit() 
