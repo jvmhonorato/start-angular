@@ -38,3 +38,4 @@ ONCHANGES
 
 .Em title.component.ts importar e  add o @Input ao public, em seguida em app.component.ts no template <app-title title="Olá Mundo">   adicionar o texto na props title pra ser renderizada
 
+. Em app.component.ts criar uma tag button com o evento click chamando uma função add() que adiciona a estancia de valor + 1
