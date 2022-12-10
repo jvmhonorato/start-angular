@@ -1,17 +1,19 @@
-import { Component, OnInit,DoCheck, AfterContentChecked, AfterContentInit,AfterViewInit, AfterViewChecked } from '@angular/core';
+import { Component, OnInit,DoCheck, AfterContentChecked, AfterContentInit,AfterViewInit, AfterViewChecked} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   template: `
-  {{valor}}
+  
+  <app-title *ngIf="drop"></app-title>
   <button (click)='add()'>add</button>
+  <button (click)='dropComponent()'>drop</button>
   <router-outlet></router-outlet>`
   
 })
 export class AppComponent implements OnInit,DoCheck, AfterContentChecked, AfterContentInit,AfterViewInit, AfterViewChecked  {
 
 
-
+  public drop :boolean = true;;
   public valor: number = 1
   constructor() {
    
@@ -34,6 +36,9 @@ export class AppComponent implements OnInit,DoCheck, AfterContentChecked, AfterC
   }
   ngAfterViewChecked(): void {
     console.log('ngAfterViewChecked')
+  }
+  public dropComponent() {
+    this.drop = false;
   }
   
 }

@@ -39,3 +39,7 @@ ONCHANGES
 .Em title.component.ts importar e  add o @Input ao public, em seguida em app.component.ts no template <app-title title="Olá Mundo">   adicionar o texto na props title pra ser renderizada
 
 . Em app.component.ts criar uma tag button com o evento click chamando uma função add() que adiciona a estancia de valor + 1
+
+. Em app.component.ts add <app-title *ngIf="drop">, estanciar um boolean em drop, em seguida criar uma função dropComponent() que quando chamada a função com o evento click mudar o valor de drop pra false assim destruindo o component
+
+.Em title.component.ts importar o ciclo OnDestroy e passar ele na class 
