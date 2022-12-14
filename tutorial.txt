@@ -46,4 +46,6 @@ ONCHANGES
 
 . Criar novo component dataBinding. 'ng g c dataBinding'
 
-.
+. cadastrar o selector'app-data-binding' no tamplate  do app.component.ts <app-data-binding></app-data-binding>
+
+. interpolations = {{}}

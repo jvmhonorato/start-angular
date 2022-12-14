@@ -4,7 +4,7 @@ import { Component, OnInit} from '@angular/core';
   selector: 'app-root',
   template: `
   
-  
+  <app-data-binding></app-data-binding>
   <router-outlet></router-outlet>`
   
 })

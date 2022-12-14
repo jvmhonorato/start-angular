@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./data-binding.component.scss']
 })
 export class DataBindingComponent {
-
+  public nome:string =  "Victor"
+  public idade: number = 33
 }
