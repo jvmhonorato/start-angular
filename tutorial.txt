@@ -1,4 +1,4 @@
-. instalar angular: ng new <app name> 
+. instalar angular: ng new <app name>
 
 .  construir server na app, iniciar a app: ng s ou ng serve
 
@@ -6,7 +6,7 @@
 
 . src/app/app.component.html eu passo <h1>{{ title }}</h1>.
 
-. e em src/app/app.component.ts eu chamo dentro de appComponent 
+. e em src/app/app.component.ts eu chamo dentro de appComponent
 public title = 'Bem vindo'
 
 o metodo public pode ser usado em qualquer lugar
@@ -18,16 +18,16 @@ public title: string = 'Title test'; depois importar pra o html do componente {{
 
 . pra renderizar no app.component.html da app passar o <app-title></app-title>
 
-. passar o router outlet do html pra o ts: 
+. passar o router outlet do html pra o ts:
 template: '<router-outlet></router-outlet>'
 
 .em seguida apagar arquivos app.component.html, app.component.spec.test e app.sass pra deixar mais limpo por enquanto.
 
 
 
-CICLOS DE VIDA DO ANGULAR 
+CICLOS DE VIDA DO ANGULAR
 
-.Em app.component.ts implementar o OnInit no component, depois por o constructor() em seguida o ngOnInit() 
+.Em app.component.ts implementar o OnInit no component, depois por o constructor() em seguida o ngOnInit()
 
 .usar o seletor de title no template em app.component.ts
 
@@ -42,10 +42,12 @@ ONCHANGES
 
 . Em app.component.ts add <app-title *ngIf="drop">, estanciar um boolean em drop, em seguida criar uma função dropComponent() que quando chamada a função com o evento click mudar o valor de drop pra false assim destruindo o component
 
-.Em title.component.ts importar o ciclo OnDestroy e passar ele na class 
+.Em title.component.ts importar o ciclo OnDestroy e passar ele na class
 
 . Criar novo component dataBinding. 'ng g c dataBinding'
 
 . cadastrar o selector'app-data-binding' no tamplate  do app.component.ts <app-data-binding></app-data-binding>
 
 . interpolations = {{}}
+
+. EM app.module.ts add o FormModule e no html add o <input> com o ([ngModel)]="nome" pra aplicar o two-way-binding
