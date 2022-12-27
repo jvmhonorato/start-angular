@@ -50,4 +50,6 @@ ONCHANGES
 
 . interpolations = {{}}
 
+. criar função MouseMoveTest com evento MouseEvent e offSetx e offSetY pra renderizar a posição do cursor dentro da DIV
+
 . EM app.module.ts add o FormModule e no html add o <input> com o ([ngModel)]="nome" pra aplicar o two-way-binding
