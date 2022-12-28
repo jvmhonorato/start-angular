@@ -46,7 +46,7 @@ ONCHANGES
 
 . Criar novo component dataBinding. 'ng g c dataBinding'
 
-. cadastrar o selector'app-data-binding' no tamplate  do app.component.ts <app-data-binding></app-data-binding>
+. cadastrar o selector'app-data-binding' no template  do app.component.ts <app-data-binding></app-data-binding>
 
 . interpolations = {{}}
 
@@ -54,5 +54,14 @@ ONCHANGES
 
 . EM app.module.ts add o FormModule e no html add o <input> com o ([ngModel)]="nome" pra aplicar o two-way-binding
 
-. criar component diretivasEstruturais, colocar seletor em app.component.ts, sempre verificar se está sendo declarado em app.module.ts
+DIRETIVAS
+
+. Criar component diretivasEstruturais, colocar seletor em app.component.ts, sempre verificar se está sendo declarado em app.module.ts
+
+
+*NGIF
+
+. No html criar uma tag com *ngif chamando uma funçãp boolean e no ts passasr um setTimeOut dentro do ngOnInit com uma condicional pra a cada 2 segundos trocar o valor boleano! depois no html criar um condicional na tag pra que está o ngIf, criar o <ng-template #elseBlock><p>false</p></ng-template> vai renderizar o valor de template alternando com o valor que está no TS de acordo com o tempo do setTimeOut!
+
+.Criar uma variável boleana conditionClick, depois criar uma uma função com uma condicional pra mudar ela de acordo com o button criado no HTML criado com o evento click chamando a função onClick criada no TS , declarar tambem  dois ngIf com conditionClick e !conditionClick
 
