@@ -65,3 +65,10 @@ DIRETIVAS
 
 .Criar uma variável boleana conditionClick, depois criar uma uma função com uma condicional pra mudar ela de acordo com o button criado no HTML criado com o evento click chamando a função onClick criada no TS , declarar tambem  dois ngIf com conditionClick e !conditionClick
 
+*NFOR
+
+. criar um array de object com nome e idade no TS, depois em HTML criar um ngFor com *ngFor="let item of list; let i = index" passar os interpolations pra renderizar os dados na tela
+
+. cria uma função pra add um object a cada click no TS e no HTML cria o <button> com o evento click
+
+.add o splice pra remover os item da lista junto ao evento click
