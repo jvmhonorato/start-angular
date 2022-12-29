@@ -72,3 +72,10 @@ DIRETIVAS
 . cria uma função pra add um object a cada click no TS e no HTML cria o <button> com o evento click
 
 .add o splice pra remover os item da lista junto ao evento click
+
+
+*NGSWITCH
+
+.criar o ngswwitch na div chamando uma função nome e passar os case com valores distintos
+
+. criar input com ngModes chamando a função nome pra renderiar dados de acordo com  o que for digitado
