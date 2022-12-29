@@ -104,3 +104,9 @@ DIRETIVAS
 
 . criar uma função salvar() , e chamar ela no HTML com o evento (click)
 pra salvar o que for digitado no campo de input
+
+
+*NGTEMPLATE
+
+.
+usando o ngFor dentro do ng-template de forma mais organizada pra renderizar objetos de Array

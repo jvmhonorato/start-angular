@@ -11,7 +11,8 @@ public valor:boolean = true;
 public heigthPx:string = "20px";
 public backgroundColor: string = " "
 public nome: string = "";
-public list:  Array<{nome:string}> = []
+public list:  Array<{nome:string}> = [{nome:"Hanna"},{nome:"Agda"}]
+
 
 constructor(){}
 ngOnInit(): void {
