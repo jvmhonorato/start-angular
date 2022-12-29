@@ -92,3 +92,15 @@ DIRETIVAS
 *NGSTYLE
 
 .cria no html um [ngStyle] chamando duas funções de Ts , uma pra alterar o tamanho da div de acordo com o tempo do setTimeOut, e  outra pra mudar a cor do background de acordo com o setTimeOut
+
+
+*NGMODEL
+
+. pra que funcione o formModel tem que ser declarado,
+
+. criar um input passando o ngModel  chamando um metodo, declarar o metodo em Ts depois passar o interpolations no HTML para que o que for digitado renderize no interpolation
+
+.criar um <li> passando um ngFor passando um let item of list e um interpolation com {{item.name}} em seguida criar os metodos list tipado com Array
+
+. criar uma função salvar() , e chamar ela no HTML com o evento (click)
+pra salvar o que for digitado no campo de input
