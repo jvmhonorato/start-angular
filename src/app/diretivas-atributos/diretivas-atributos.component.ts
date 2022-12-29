@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class DiretivasAtributosComponent implements OnInit {
 
 public valor:boolean = true;
+public heigthPx:string = "20px";
+public backgroundColor: string = " "
 
 constructor(){}
 ngOnInit(): void {
@@ -16,6 +18,13 @@ setInterval(() => {
     this.valor = false;
   }else{
     this.valor = true;
+  }
+  if(this.heigthPx =="20px"){
+   this.heigthPx = "50px";
+   this.backgroundColor = "blue"
+  }else{
+    this.heigthPx = "20px"
+    this.backgroundColor = "yellow"
   }
 },2000)
 }

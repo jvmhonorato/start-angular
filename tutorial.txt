@@ -87,3 +87,8 @@ DIRETIVAS
 . criar no sass duas classes em seguida passar no html o ngClass chamando a classe desejada
 
 .criar passar ambas as sass criadas no ngClass atribuida a um boolean valor de pois no TS passar criar valor e passar um set interval pra cambiar as classes de acordo com o tempo passado
+
+
+*NGSTYLE
+
+.cria no html um [ngStyle] chamando duas funções de Ts , uma pra alterar o tamanho da div de acordo com o tempo do setTimeOut, e  outra pra mudar a cor do background de acordo com o setTimeOut
