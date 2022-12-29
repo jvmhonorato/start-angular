@@ -12,6 +12,7 @@ public heigthPx:string = "20px";
 public backgroundColor: string = " "
 public nome: string = "";
 public list:  Array<{nome:string}> = [{nome:"Hanna"},{nome:"Agda"}]
+public date: Date = new Date();
 
 
 constructor(){}

@@ -9,7 +9,7 @@
 <button (click)="salvar()">Salvar</button>
 <li *ngFor="let item of list">{{item.nome}}</li> -->
 
-<!-- <p *ngFor="let item of list">{{item.nome}}</p>
+<p *ngFor="let item of list">{{item.nome | uppercase}}</p>
 <ng-template [ngIf]="true">
   <p>
     True
@@ -21,5 +21,7 @@
   </p>
 </ng-template>
 <input [(ngModel)]="nome">{{nome}}
-<button (click)="salvar()">Salvar</button> -->
+<button (click)="salvar()">Salvar</button>
+<hr>
+{{date | date: 'dd/mm/yyyy'}}
 <ng-content select="h3"></ng-content>
