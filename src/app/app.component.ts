@@ -6,7 +6,10 @@ import { Component, OnInit} from '@angular/core';
 
   <app-data-binding></app-data-binding>
   <app-diretivas-estruturais></app-diretivas-estruturais>
-  <app-diretivas-atributos></app-diretivas-atributos>
+  <app-diretivas-atributos>
+    <h1>Header</h1>
+    <h3>Footer</h3>
+  </app-diretivas-atributos>
   <router-outlet></router-outlet>`
 
 })

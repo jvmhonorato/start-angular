@@ -110,3 +110,7 @@ pra salvar o que for digitado no campo de input
 
 .
 usando o ngFor dentro do ng-template de forma mais organizada pra renderizar objetos de Array
+
+NGCONTENT
+
+. Em app.module.ts  add entre os seletor do component desejado a tah desejada com o conteúdo que quiser, em seguida no HTML do component inserir o <ng-content select="h1"> ai o conteúdo da template de app.component.ts será renderizado
