@@ -114,3 +114,14 @@ usando o ngFor dentro do ng-template de forma mais organizada pra renderizar obj
 NGCONTENT
 
 . Em app.module.ts  add entre os seletor do component desejado a tah desejada com o conteúdo que quiser, em seguida no HTML do component inserir o <ng-content select="h1"> ai o conteúdo da template de app.component.ts será renderizado
+
+
+Criando Sub-module
+
+.pra compartilhar com toda a aplicação criar um shared: ng g m shared
+
+.importar o SharedModule no app.module.ts se ele não importar automaticamente 
+
+.depois criar um component dentro de shared: ng g c shared/newComponent
+
+.Em shared module declarar e exportar o component criado dentro de de shared pra que funcione
