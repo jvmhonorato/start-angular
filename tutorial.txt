@@ -129,6 +129,7 @@ Criando Sub-module
 
 COMUNICAÇÃO ENTRE COMPONENTES
 
+INPUT
 .criar novo componente em shared: ng g c shared/input
 
 .declarar e exportar em shared modules
@@ -138,3 +139,23 @@ COMUNICAÇÃO ENTRE COMPONENTES
 .o addValue cria no app.component.ts
 
 .add buttons com evento click chamandp funções
+OUTPUT
+
+.Criar component output: ng g c /shared/output
+
+.Em output.component.ts criar @Output public,
+
+.Criar array de objetos tipados
+
+. Criar função que será utilizada no evento click no HTML
+
+.criar em output.component.ts o metodo publico @Output enviar dados
+
+. em app.component.ts passasr o seleto app.output chamando injetando o "enviardados" criar uma função setDados() em app.component.ts e por ela atribuida a "envuar dados"
+
+.
+
+
+
+
+
