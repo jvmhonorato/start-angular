@@ -120,8 +120,21 @@ Criando Sub-module
 
 .pra compartilhar com toda a aplicação criar um shared: ng g m shared
 
-.importar o SharedModule no app.module.ts se ele não importar automaticamente 
+.importar o SharedModule no app.module.ts se ele não importar automaticamente
 
 .depois criar um component dentro de shared: ng g c shared/newComponent
 
 .Em shared module declarar e exportar o component criado dentro de de shared pra que funcione
+
+
+COMUNICAÇÃO ENTRE COMPONENTES
+
+.criar novo componente em shared: ng g c shared/input
+
+.declarar e exportar em shared modules
+
+.criar o  @Input() public contador e chamar no app.component.ts :<app-input [contador]= "addValue">
+
+.o addValue cria no app.component.ts
+
+.add buttons com evento click chamandp funções
