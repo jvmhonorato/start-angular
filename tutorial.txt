@@ -160,7 +160,11 @@ INJEÇÃO DE DEPENDÊNCIA
 pra compartilhar o array de objetos com a lista privada depois chamar metodo publico foodList()
 
 .criar um componete compartilhado
-ng g c /shaed/foodList
+ng g c /shared/foodList
+declarar e exportar no shared module.ts, copiar o seletor e por no main app.component.ts
+
+.
+
 
 
 

@@ -20,7 +20,9 @@ import { Component, OnInit} from '@angular/core';
     <h2>{{getDados.idade}}</h2>
   </ng-template>
   <!-- <app-output (enviarDados)="setDados($event)")></app-output> -->
-  <router-outlet></router-outlet>`
+  <router-outlet></router-outlet>
+  <app-food-list></app-food-list>
+  `
 
 })
 export class AppComponent implements OnInit  {
