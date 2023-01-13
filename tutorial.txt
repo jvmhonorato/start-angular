@@ -13,6 +13,8 @@ o metodo public pode ser usado em qualquer lugar
 
 . comando pra criar component: ng g c <nome do componente>
 
+. criar um: ng g s services/foodList
+
 .no arquivo ts do componente passar dentro da classe :
 public title: string = 'Title test'; depois importar pra o html do componente {{title}}
 
