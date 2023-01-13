@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
 import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
 import { SharedModule } from "./shared/shared.module";
+import { FoodListComponent } from './shaed/food-list/food-list.component';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { SharedModule } from "./shared/shared.module";
         TitleComponent,
         DataBindingComponent,
         DiretivasEstruturaisComponent,
-        DiretivasAtributosComponent
+        DiretivasAtributosComponent,
+        FoodListComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

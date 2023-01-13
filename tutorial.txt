@@ -13,7 +13,6 @@ o metodo public pode ser usado em qualquer lugar
 
 . comando pra criar component: ng g c <nome do componente>
 
-. criar um: ng g s services/foodList
 
 .no arquivo ts do componente passar dentro da classe :
 public title: string = 'Title test'; depois importar pra o html do componente {{title}}
@@ -155,7 +154,13 @@ OUTPUT
 
 . em app.component.ts passasr o seleto app.output chamando injetando o "enviardados" criar uma função setDados() em app.component.ts e por ela atribuida a "envuar dados"
 
-.
+INJEÇÃO DE DEPENDÊNCIA
+
+. criar um: ng g s services/foodList
+pra compartilhar o array de objetos com a lista privada depois chamar metodo publico foodList()
+
+.criar um componete compartilhado
+ng g c /shaed/foodList
 
 
 
