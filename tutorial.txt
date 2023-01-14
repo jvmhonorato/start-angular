@@ -164,10 +164,12 @@ ng g c /shared/foodList
 declarar e exportar no shared module.ts, copiar o seletor e por no main app.component.ts
 
 .em foodList.componet.ts criar um metodo array publico , em seguida fundir a classe de serviço que está em shared  no construtor, em seguida no ngOnit unir a classe de serviço de shared com o metodo array foodList
-no food-list.component.html  passa o 
+no food-list.component.html  passa o
 <li *ngFor="let item of foodList">{{item}}</li>
 
+COMUNICAÇÃO DE COMPONENTE COM services
 
+crira novo componente em shared, o food-list
 
 
 
