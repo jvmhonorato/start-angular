@@ -181,3 +181,11 @@ criar metodo listAddItem(), e depois no html passar um input com uma classe e de
 . agora é só fazer  injeção de dependencia no construtor do
 food-add.component.ts trazendo o metodo privado da class de serviço
 
+SUBSCRIBE
+
+.em food list service criar metodo emitEvent depois criar metodo publico foodListAlert retornando o emitEvent
+
+.passar esse metodo dentro de foodListAdd
+
+.EM FoodListComponent passar no ngOnInit o foodListService o subscribe e a mensagme do alert
+
