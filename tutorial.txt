@@ -169,7 +169,9 @@ no food-list.component.html  passa o
 
 COMUNICAÇÃO DE COMPONENTE COM services
 
-crira novo componente em shared, o food-list
+crira novo componente em shared, o food-add, e declarar em shared.module.ts no import
+
+.em food-list.service.ts cria um novo metodo foodListAdd dando um push no valor declarado posteriomente
 
 
 
