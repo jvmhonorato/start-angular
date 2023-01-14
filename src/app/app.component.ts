@@ -22,6 +22,8 @@ import { Component, OnInit} from '@angular/core';
   <!-- <app-output (enviarDados)="setDados($event)")></app-output> -->
   <router-outlet></router-outlet>
   <app-food-list></app-food-list>
+
+  <app-food-add></app-food-add>
   `
 
 })

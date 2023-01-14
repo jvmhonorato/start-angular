@@ -171,7 +171,13 @@ COMUNICAÇÃO DE COMPONENTE COM services
 
 crira novo componente em shared, o food-add, e declarar em shared.module.ts no import
 
-.em food-list.service.ts cria um novo metodo foodListAdd dando um push no valor declarado posteriomente
+.em food-list.service.ts cria um novo metodo foodListAdd dando um push no valor declarado posteriomente...
 
+. em food-add.component.ts
+criar metodo listAddItem(), e depois no html passar um input com uma classe e depois um button com o evento click chamando o metodo listAddItem() com aclasse do input dentro.
 
+.Declarar o seletor em app.component.ts
+
+. agora é só fazer  injeção de dependencia no construtor do
+food-add.component.ts trazendo o metodo privado da class de serviço
 
