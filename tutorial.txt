@@ -189,3 +189,15 @@ SUBSCRIBE
 
 .EM FoodListComponent passar no ngOnInit o foodListService o subscribe e a mensagme do alert
 
+
+.FAKE SERVER
+
+. instalar: npm install -g json-server
+
+.criar arquivo db.json e add objetos
+
+. entrar na pasta que está o db.json e startar com: json-server --watch db.json
+
+depois no browser : http://localhost:3000/list-food pra ver os dados de db.json
+
+
