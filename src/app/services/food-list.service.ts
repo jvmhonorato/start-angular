@@ -25,9 +25,9 @@ export class FoodListService {
   // }
 
 
-  //get method 
-  public foodList():Observable<FoodList> {
-  return this.http.get<FoodList>(` ${this.url }list-food` )
+  //get method
+  public foodList():Observable<Array<FoodList>> {
+  return this.http.get<Array<FoodList>>(` ${this.url }list-food` )
   .pipe(
     res => res,
     error => error

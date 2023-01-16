@@ -11,7 +11,7 @@ import { FoodListService } from 'src/app/services/food-list.service';
 })
 export class FoodListComponent  implements OnInit {
 
-  public foodList: FoodList | any = [];
+  public foodList: Array<FoodList> = [];
   constructor(private foodListService: FoodListService) {}
 
   ngOnInit(): void {
