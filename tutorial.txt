@@ -220,3 +220,21 @@ POST
 .Criar na classe de serviço o http.post chamando a interface FoodList e passando o endpoint com o {nome:value}, em seguida passando o pipe com o res e o error
 
 .EM  food-add.component.ts add o alert no subscribe
+
+
+PUT
+
+.Na classe de serviço criar foodListEdit() passando id na url e o metodo put
+
+DELETE
+.Na classe de serviço criar foodListDelete() passando id na url e o metodo delete
+
+.EM food-list.component.html add button com evento click chamando função foodListDelete()
+
+.EM food-list.component.ts criar  o metodo foodListDelete() com subscribe
+
+
+
+
+
+

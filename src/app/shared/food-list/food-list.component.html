@@ -1,1 +1,4 @@
-<li *ngFor="let item of foodList">[{{item.id}}]-{{item.nome}}</li>
+<li *ngFor="let item of foodList">
+  [{{item.id}}]-{{item.nome}}
+  <button (click)="foodListDelete(item.id)">Remove</button>
+</li>

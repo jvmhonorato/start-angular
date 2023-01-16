@@ -28,4 +28,18 @@ export class FoodListComponent  implements OnInit {
     }
     );
   }
+
+     public  foodListDelete(id:number){
+    return this.foodListService.foodListDelete(id).subscribe({
+     next:  (res:any) => {
+        this.foodList = this.foodList.filter(
+          item => {
+            return id !== item.id
+          }
+        )
+      },
+    error:  (error:any) => error
+    })
+
+  }
 }

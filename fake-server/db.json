@@ -1,14 +1,6 @@
 {
   "list-food": [
     {
-      "id": 1,
-      "nome": "yakisoba"
-    },
-    {
-      "id": 2,
-      "nome": "sushi"
-    },
-    {
       "id": 3,
       "nome": "hot-dog"
     },
