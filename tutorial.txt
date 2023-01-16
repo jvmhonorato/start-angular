@@ -201,3 +201,17 @@ SUBSCRIBE
 depois no browser : http://localhost:3000/list-food pra ver os dados de db.json
 
 
+REQUISIÇÕES http
+
+. Em food.list.service declarar o end point das api em seguida relacionar com HttpClient dentro do contrutor de forma privada
+
+.Passar  =o http.get dentro do metodo foodList com Observable
+
+.Criar um nova interface para o foodList: ng g i/modules/foodList
+
+.Em shared.module.ts importat o HttpClientModule e declarar no import
+
+.
+
+
+
