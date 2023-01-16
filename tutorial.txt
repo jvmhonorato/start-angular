@@ -196,7 +196,7 @@ SUBSCRIBE
 
 .criar arquivo db.json e add objetos
 
-. entrar na pasta que está o db.json e startar com: json-server --watch db.json
+.ENTRAR NA PASTA que está o db.json e startar com: json-server --watch db.json
 
 depois no browser : http://localhost:3000/list-food pra ver os dados de db.json
 
@@ -217,4 +217,6 @@ REQUISIÇÕES http  GET
 
 POST
 
-.
+.Criar na classe de serviço o http.post chamando a interface FoodList e passando o endpoint com o {nome:value}, em seguida passando o pipe com o res e o error
+
+.EM  food-add.component.ts add o alert no subscribe
