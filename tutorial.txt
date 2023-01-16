@@ -226,6 +226,13 @@ PUT
 
 .Na classe de serviço criar foodListEdit() passando id na url e o metodo put
 
+. em shared.model.ts importar e declarar o FormModule pra poder usasr o ngModel
+
+.EM food-list.component.html passar input com ngModel e keyupchamando o metodo foodListEdit()
+
+.Emfood-list.component.ts criar o metod foodListEdit()
+
+
 DELETE
 .Na classe de serviço criar foodListDelete() passando id na url e o metodo delete
 

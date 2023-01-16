@@ -42,4 +42,13 @@ export class FoodListComponent  implements OnInit {
     })
 
   }
+
+  public foodListEdit(value:string, id:number) {
+    this.foodListService.foodListEdit(value, id).subscribe({
+      next: (res:any) => {
+        return console.log(res)
+      },
+      error: (error) => error
+    })
+  }
 }
