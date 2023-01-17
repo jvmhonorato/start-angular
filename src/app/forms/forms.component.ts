@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./forms.component.scss']
 })
 export class FormsComponent {
+  public listComidas: Array<{comida: string, preco: string}> = [
+    {comida:"acaraje", preco:"R$10,00"},
+    {comida:"coxinha", preco:"R$11,00"},
+    {comida:"pastel", preco:"R$12,00"},
+    {comida:"sonho", preco:"R$13,00"},
+  ]
 
 }

@@ -253,6 +253,9 @@ FORMS
 
 . criar um novo componente: ng g c forms
 
+. Em forms.component.html passar <form #form="ngForm"> </form> e passar os campos de input e label
+
+.passar input text, radio, checkbox e select 
 
 
 
