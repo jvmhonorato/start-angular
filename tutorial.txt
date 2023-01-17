@@ -228,7 +228,7 @@ PUT
 
 . em shared.model.ts importar e declarar o FormModule pra poder usasr o ngModel
 
-.EM food-list.component.html passar input com ngModel e keyupchamando o metodo foodListEdit()
+.EM food-list.component.html passar input com ngModel e keyup chamando o metodo foodListEdit()
 
 .Emfood-list.component.ts criar o metod foodListEdit()
 
@@ -240,6 +240,10 @@ DELETE
 
 .EM food-list.component.ts criar  o metodo foodListDelete() com subscribe
 
+
+HTTP OPTIONS
+
+.EM food-list.service.ts criar metoso httpOptions e passar nele o HttpHeaders. podendo aplicar ele nos metodos que desejar  como POST, GET e etc!!
 
 
 

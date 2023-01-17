@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FoodList } from '../modules/food-list';
@@ -15,6 +15,13 @@ export class FoodListService {
     "Feijão",
     "Ovo"
   ]
+
+  private httpOptions = {
+    headers: new  HttpHeaders({
+      'Content-Type': 'application/json',
+
+    })
+  };
 
   //API fake
   private url: string = "http://localhost:3000/"
@@ -43,7 +50,7 @@ export class FoodListService {
 
   //POST method
   public foodListAdd(value: string): Observable<FoodList>{
-  return this.http.post<FoodList>(` ${this.url }list-food`,{nome:value} ).pipe(
+  return this.http.post<FoodList>(` ${this.url }list-food`,{nome:value}, this.httpOptions ).pipe(
     res => res,
     error => error
   )
