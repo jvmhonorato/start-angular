@@ -247,5 +247,13 @@ HTTP OPTIONS
 
 
 
+FORMS
+
+.Cadastrar em app.module.ts o FormsModule e dar o import
+
+. criar um novo componente: ng g c forms
+
+
+
 
 

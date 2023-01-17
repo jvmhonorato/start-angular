@@ -1,0 +1,6 @@
+<form #form="ngForm">
+  <label>Nome:</label>
+  <input type="text" name="nome" ngModel>
+</form>
+
+{{ form.value | json }}
