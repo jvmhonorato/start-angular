@@ -1,6 +1,16 @@
-<form #form="ngForm">
-  <label>Nome:</label>
-  <input type="text" name="nome" ngModel>
+<form #form="ngForm" (ngSubmit)="submitForm(form)">
+  <label>Nome:
+  <!-- <input type="text" name="nome" ngModel> -->
+  <input type="text" name="nome" #nome="ngModel" [ngModel]="nome.value" required>
+  <span *ngIf="!nome.valid && (nome.dirty && nome.touched)">
+    Invalid
+  </span>
+</label>
+   <br>
+   <br>
+   {{nome.valid}}
+   {{nome.dirty}}
+   {{nome.touched}}
    <br>
    <br>
   <label>Masculino</label>
@@ -27,6 +37,9 @@
      <option value="">selecione uma opção de comida</option>
             <option *ngFor="let item of listComidas" [ngValue]="item">{{item.comida}} - {{item.preco}}</option>
   </select>
+  <br>
+  <br>
+  <button [disabled]="form.invalid">Enviar Dados</button>
 </form>
 <br>
 <br>

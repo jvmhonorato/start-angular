@@ -255,7 +255,15 @@ FORMS
 
 . Em forms.component.html passar <form #form="ngForm"> </form> e passar os campos de input e label
 
-.passar input text, radio, checkbox e select 
+.passar input text, radio, checkbox e select
+
+.add no input umaclass #nome="ngModel" e um required, em seguida um <span> com *ngIf pra renderizar mensagem somente se cair na condição pre estabelecida
+
+submit
+
+. criar um button com disabled chamndo o boolean pra só ativar o buttoon se tiver algo escrito no formulário.
+
+. Em forms.component.ts criar metodo submitform() e passar no <form> do HTML
 
 
 
