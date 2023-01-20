@@ -265,6 +265,14 @@ submit
 
 . Em forms.component.ts criar metodo submitform() e passar no <form> do HTML
 
+REACTIVE FORMS
+
+. em app.module.ts importar o ReactiveFormsModule
+
+.criar novo component: ng g c reactiveForms
+
+. em app.routing.ts importar o reactiveForms e declarar em router
+
 
 
 
