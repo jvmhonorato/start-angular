@@ -277,6 +277,13 @@ REACTIVE FORMS
 
 .Criar metodo submitForm() em TS, em html criar na tag <fomr>  o evento (ngSubmit) chamando o submitForm()
 
+VALIDATIONS FORM
+
+.import and add Validators.required nos campos de input
+
+.criar span com ngIf chamando o error de forma condiconal pra se não houver dados no campo de input renderizar mensagem
+
+.trabalhar o dirty e o touched
 
 
 
