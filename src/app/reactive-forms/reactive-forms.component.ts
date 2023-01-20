@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-forms',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./reactive-forms.component.scss']
 })
 export class ReactiveFormsComponent {
+
+  public cadastroForm: FormGroup = this.formBuilder.group({
+    firstName: ['']
+  })
+
+  constructor(private formBuilder: FormBuilder) { }
 
 }
