@@ -274,7 +274,8 @@ REACTIVE FORMS
 . em app.routing.ts importar o reactiveForms e declarar em router
 
 . em reactive-forms.ts importar o FormBuiltdAutoTrim
-.
+
+.Criar metodo submitForm() em TS, em html criar na tag <fomr>  o evento (ngSubmit) chamando o submitForm()
 
 
 

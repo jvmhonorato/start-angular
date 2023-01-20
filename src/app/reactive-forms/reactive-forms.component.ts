@@ -9,9 +9,15 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class ReactiveFormsComponent {
 
   public cadastroForm: FormGroup = this.formBuilder.group({
-    firstName: ['']
+    firstName: [''],
+    lastName: ['']
   })
 
   constructor(private formBuilder: FormBuilder) { }
+
+  public submitForm() {
+    console.log(this.cadastroForm.value);
+    console.log(this.cadastroForm.value.firstName);
+  }
 
 }
