@@ -285,5 +285,9 @@ VALIDATIONS FORM
 
 .trabalhar o dirty e o touched
 
+. Em reactive-forms.ts add no submit a condicional isValid pra só dar o submit se o formulário estiver valido
+
+.add tambem o : [disabled]="cadastroForm.invalid" pra o botão só aparecer se o form tiver válido
+
 
 

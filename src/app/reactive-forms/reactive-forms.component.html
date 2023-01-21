@@ -17,13 +17,13 @@
     {{cadastroForm.get('firstName')?.value}} {{cadastroForm.get('lastName')?.value}}
     <br />
     <br />
-    <button >Enviar</button>
+    <button [disabled]="cadastroForm.invalid">Enviar</button>
     <br />
     <br />
     <span>{{cadastroForm.get('firstName')?.value?.firstName | json}} {{cadastroForm.get('lastName')?.value?.lastName | json}}</span>
 
-    
-    <span *ngIf="cadastroForm.get('firstName')?.touched || cadastroForm.get('firstName')?.dirty  ">Tocado</span>
+
+    <span class="tocado" *ngIf="cadastroForm.get('firstName')?.touched || cadastroForm.get('firstName')?.dirty  ">Tocado</span>
 
 
   </form>
