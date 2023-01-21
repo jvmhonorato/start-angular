@@ -27,10 +27,13 @@
 
 
   </form>
-  {{cadastroForm.get('firstName')?.errors | json}}
-  {{cadastroForm.get('firstName')?.touched | json}}
+  {{cadastroForm.get('firstName')?.errors | json}}<br />
+  {{cadastroForm.get('firstName')?.touched | json}}<br />
   {{cadastroForm.get('firstName')?.dirty | json}}
-
+  <br />
+  {{cadastroForm.get('lastName')?.errors | json}}<br />
+  {{cadastroForm.get('lastName')?.touched | json}}<br />
+  {{cadastroForm.get('lastName')?.dirty | json}}
 
 </div>
 

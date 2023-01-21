@@ -9,8 +9,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ReactiveFormsComponent {
 
   public cadastroForm: FormGroup = this.formBuilder.group({
-    firstName: ['', Validators.required],
-    lastName: ['', Validators.required]
+    firstName: ['', [Validators.required, Validators.maxLength(20), Validators.minLength(4)]],
+    lastName: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(20)]]
   })
 
   constructor(private formBuilder: FormBuilder) { }
