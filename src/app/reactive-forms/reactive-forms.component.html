@@ -3,14 +3,15 @@
     <label>
       Nome:
       <input type="text" formControlName="firstName" ><br/>
-      <span *ngIf="cadastroForm.get('firstName')?.errors">Favor adicionar nome ao campo de input </span>
+      <span *ngIf="cadastroForm.get('firstName')?.errors && cadastroForm.get('firstName')?.touched && cadastroForm.get('firstName')?.dirty">Favor adicionar no mínimo {{cadastroForm.get('firstName')?.errors?.['minlength']?.requiredLength}}</span>
     </label>
     <br />
     <br />
     <label>
       Sobrenome:
       <input type="text" formControlName="lastName" ><br/>
-      <span *ngIf="cadastroForm.get('lastName')?.errors">Favor adicionar nome ao campo de input </span>
+      <span *ngIf="cadastroForm.get('lastName')?.errors && cadastroForm.get('lastName')?.touched && cadastroForm.get('lastName')?.dirty ">Favor adicionar no mínimo {{cadastroForm.get('lastName')?.errors?.['minlength']?.requiredLength}} </span>
+
     </label>
 
     <br />
@@ -27,7 +28,7 @@
 
 
   </form>
-  {{cadastroForm.get('firstName')?.errors | json}}<br />
+  {{cadastroForm.get('firstName')?.errors?.['minlength'] | json}}<br />
   {{cadastroForm.get('firstName')?.touched | json}}<br />
   {{cadastroForm.get('firstName')?.dirty | json}}
   <br />
