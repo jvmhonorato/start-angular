@@ -189,9 +189,113 @@ SUBSCRIBE
 
 .EM FoodListComponent passar no ngOnInit o foodListService o subscribe e a mensagme do alert
 
+<<<<<<< HEAD
 FAKE SERVER
 
 
 .instalar o json server.
 npm install -g json-server
+=======
+
+.FAKE SERVER
+
+. instalar: npm install -g json-server
+
+.criar arquivo db.json e add objetos
+
+.ENTRAR NA PASTA que está o db.json e startar com: json-server --watch db.json
+
+depois no browser : http://localhost:3000/list-food pra ver os dados de db.json
+
+
+REQUISIÇÕES http  GET
+
+. Em food.list.service declarar o end point das api em seguida relacionar com HttpClient dentro do contrutor de forma privada
+
+.Passar  =o http.get dentro do metodo foodList com e sua interface Observable<FoodList> e o get<FoodList>
+
+.Criar um nova interface para o foodList: ng g i/modules/foodList
+
+.Em shared.module.ts importat o HttpClientModule e declarar no import
+
+.em food-list.component.ts add subscribe: this.foodListService.foodList().subscribe() pra ficar escutando
+
+
+
+POST
+
+.Criar na classe de serviço o http.post chamando a interface FoodList e passando o endpoint com o {nome:value}, em seguida passando o pipe com o res e o error
+
+.EM  food-add.component.ts add o alert no subscribe
+
+
+PUT
+
+.Na classe de serviço criar foodListEdit() passando id na url e o metodo put
+
+. em shared.model.ts importar e declarar o FormModule pra poder usasr o ngModel
+
+.EM food-list.component.html passar input com ngModel e keyup chamando o metodo foodListEdit()
+
+.Emfood-list.component.ts criar o metod foodListEdit()
+
+
+DELETE
+.Na classe de serviço criar foodListDelete() passando id na url e o metodo delete
+
+.EM food-list.component.html add button com evento click chamando função foodListDelete()
+
+.EM food-list.component.ts criar  o metodo foodListDelete() com subscribe
+
+
+HTTP OPTIONS
+
+.EM food-list.service.ts criar metoso httpOptions e passar nele o HttpHeaders. podendo aplicar ele nos metodos que desejar  como POST, GET e etc!!
+
+
+
+FORMS
+
+.Cadastrar em app.module.ts o FormsModule e dar o import
+
+. criar um novo componente: ng g c forms
+
+. Em forms.component.html passar <form #form="ngForm"> </form> e passar os campos de input e label
+
+.passar input text, radio, checkbox e select
+
+.add no input umaclass #nome="ngModel" e um required, em seguida um <span> com *ngIf pra renderizar mensagem somente se cair na condição pre estabelecida
+
+submit
+
+. criar um button com disabled chamndo o boolean pra só ativar o buttoon se tiver algo escrito no formulário.
+
+. Em forms.component.ts criar metodo submitform() e passar no <form> do HTML
+
+REACTIVE FORMS
+
+. em app.module.ts importar o ReactiveFormsModule
+
+.criar novo component: ng g c reactiveForms
+
+. em app.routing.ts importar o reactiveForms e declarar em router
+
+. em reactive-forms.ts importar o FormBuiltdAutoTrim
+
+.Criar metodo submitForm() em TS, em html criar na tag <fomr>  o evento (ngSubmit) chamando o submitForm()
+
+VALIDATIONS FORM
+
+.import and add Validators.required nos campos de input
+
+.criar span com ngIf chamando o error de forma condiconal pra se não houver dados no campo de input renderizar mensagem
+
+.trabalhar o dirty e o touched
+
+. Em reactive-forms.ts add no submit a condicional isValid pra só dar o submit se o formulário estiver valido
+
+.add tambem o : [disabled]="cadastroForm.invalid" pra o botão só aparecer se o form tiver válido
+
+
+>>>>>>> b2b742c92cbb01705c269177209bb62ebf638ff3
 

@@ -1,0 +1,40 @@
+<div>
+  <form [formGroup]="cadastroForm" (ngSubmit)="submitForm()">
+    <label>
+      Nome:
+      <input type="text" formControlName="firstName" ><br/>
+      <span *ngIf="cadastroForm.get('firstName')?.errors && cadastroForm.get('firstName')?.touched && cadastroForm.get('firstName')?.dirty">Favor adicionar no mínimo {{cadastroForm.get('firstName')?.errors?.['minlength']?.requiredLength}}</span>
+    </label>
+    <br />
+    <br />
+    <label>
+      Sobrenome:
+      <input type="text" formControlName="lastName" ><br/>
+      <span *ngIf="cadastroForm.get('lastName')?.errors && cadastroForm.get('lastName')?.touched && cadastroForm.get('lastName')?.dirty ">Favor adicionar no mínimo {{cadastroForm.get('lastName')?.errors?.['minlength']?.requiredLength}} </span>
+
+    </label>
+
+    <br />
+    {{cadastroForm.get('firstName')?.value}} {{cadastroForm.get('lastName')?.value}}
+    <br />
+    <br />
+    <button [disabled]="cadastroForm.invalid">Enviar</button>
+    <br />
+    <br />
+    <span>{{cadastroForm.get('firstName')?.value?.firstName | json}} {{cadastroForm.get('lastName')?.value?.lastName | json}}</span>
+
+
+    <span class="tocado" *ngIf="cadastroForm.get('firstName')?.touched || cadastroForm.get('firstName')?.dirty  ">Tocado</span>
+
+
+  </form>
+  {{cadastroForm.get('firstName')?.errors?.['minlength'] | json}}<br />
+  {{cadastroForm.get('firstName')?.touched | json}}<br />
+  {{cadastroForm.get('firstName')?.dirty | json}}
+  <br />
+  {{cadastroForm.get('lastName')?.errors | json}}<br />
+  {{cadastroForm.get('lastName')?.touched | json}}<br />
+  {{cadastroForm.get('lastName')?.dirty | json}}
+
+</div>
+
