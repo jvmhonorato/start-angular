@@ -12,6 +12,10 @@ export class DiretivasEstruturaisComponent implements OnInit{
     {nome:"Victor Honorato",idade:23},
     {nome:"Agda Honorato",idade:39},
     {nome:"Hanna Honorato",idade:9},
+    {nome:"Neide Honorato",idade:65},
+    {nome:"Victor Honorato",idade:23},
+    {nome:"Agda Honorato",idade:39},
+    {nome:"Hanna Honorato",idade:9},
     {nome:"Neide Honorato",idade:65}
   ];
   public nome:string = 'Agda'

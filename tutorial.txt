@@ -189,3 +189,9 @@ SUBSCRIBE
 
 .EM FoodListComponent passar no ngOnInit o foodListService o subscribe e a mensagme do alert
 
+FAKE SERVER
+
+
+.instalar o json server.
+npm install -g json-server
+
