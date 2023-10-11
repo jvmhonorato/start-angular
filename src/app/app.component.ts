@@ -4,7 +4,7 @@ import { Component, OnInit} from '@angular/core';
   selector: 'app-root',
   template: `
 
-  <!-- <app-data-binding></app-data-binding>
+  <app-data-binding></app-data-binding>
   <app-diretivas-estruturais></app-diretivas-estruturais>
   <app-diretivas-atributos>
     <h1>Header</h1>
@@ -23,7 +23,7 @@ import { Component, OnInit} from '@angular/core';
 
   <app-food-add></app-food-add>
 
-  <app-forms></app-forms>-->
+  <app-forms></app-forms>
   <app-reactive-forms></app-reactive-forms>
   `
 
