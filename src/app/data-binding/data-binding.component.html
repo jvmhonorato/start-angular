@@ -1,18 +1,23 @@
-<h1>Interpolation</h1>
+<div class="flex justify-center">
+
+  <h1>Interpolation</h1>
 
 
-<h2>{{nome}} tem {{idade}} anos</h2>
-<p>{{ idade > 32}}</p>
+  <h2>{{nome}} tem {{idade}} anos</h2>
+  <p>{{ idade > 32}}</p>
 
-<hr>
-<h2>Property Binding</h2>
-<button [disabled]="checkedDisabled">Button</button>
-<img [src]="imgSrc" [title]="imgTitle">
-<input [(ngModel)]="nome">
-{{nome}}
-<hr>
-<button (click)="alertInfo($event)">Eventos</button>
-<div (mousemove)="mouseMoveTest($event)" style="background: red; width: 300px; height: 300px;"></div>
-{{position.x}} |  {{position.y}}
-<hr>
+  <hr>
+  <h2>Property Binding</h2>
+  <button [disabled]="checkedDisabled">Button</button>
+
+  <input [(ngModel)]="nome">
+  {{nome}}
+  <hr>
+  <button (click)="alertInfo($event)">Eventos</button>
+  <div (mousemove)="mouseMoveTest($event)" style="background: red; width: 300px; height: 300px;"></div>
+  {{position.x}} |  {{position.y}}
+  <hr>
+  <img [src]="imgSrc" [title]="imgTitle">
+</div>
+
 
